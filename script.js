@@ -419,7 +419,7 @@ async function fetchJobDetails(email, jobId) {
         
         // Status Badge Logic
         const statusSpan = document.getElementById('detailStatus');
-        statusSpan.textContent = `${job.is_open ? 'open' : 'closed'}`;
+        statusSpan.textContent = `${job.is_open ? 'Status: open' : 'Status: closed'}`;
         statusSpan.className = `detail-badge ${job.is_open ? 'status-open' : 'status-closed'}`;
 
         document.getElementById('detailDate').innerHTML = `<strong>Date Posted:</strong> ${job.date_posted}`;
