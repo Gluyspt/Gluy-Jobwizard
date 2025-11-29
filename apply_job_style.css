@@ -78,7 +78,7 @@ body {
     font-size: 25px;
     line-height: 1.5;
     margin-bottom: 30px;
-    color: #333;
+    color: #27214F;
 }
 
 .detail-info-grid p {
@@ -169,4 +169,5 @@ body {
 
 .status-message.info {
     color: white;
+
 }
