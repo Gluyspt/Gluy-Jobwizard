@@ -1,0 +1,129 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    min-height: 100vh;
+}
+
+.main-container {
+    max-width: 1900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.detail-card {
+    background: linear-gradient(180deg, #E9D5FF 0%, #7481D4 100%);
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    min-height: 740px;
+    position: relative;
+}
+
+#jobContent h1 {
+    color: #27214F;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.detail-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #27214F;
+}
+
+.detail-badge {
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.id-badge {
+    background-color: #FFFCDA;
+    color: #815800;
+    border: 1px solid #ddd;
+}
+
+.status-open { background-color: #DAFFDA; color: #008100; }
+.status-closed { background-color: #FFD4D4; color: #B70000; }
+
+#detailDate {
+    font-size: 30px;
+    color: #27214F;
+    font-weight: 500;
+}
+
+#detailDate strong {
+    font-weight: 700;
+    color: #27214F; 
+    margin-right: 10px;
+}
+
+.detail-section h3 {
+    font-size: 40px;
+    color: #27214F;
+    margin-bottom: 10px;
+}
+
+.detail-section p {
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.detail-info-grid p {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #27214F;
+    font-weight: 500;
+}
+
+.detail-info-grid strong {
+    font-weight: 700;
+    color: #27214F;
+    margin-right: 10px;
+}
+
+.detail-footer {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.creator-text {
+    font-size: 30px;
+    color: #27214F;
+    font-weight: 700;
+}
+
+#detailCreator {
+    color: #27214F;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.return-btn {
+    background-color: white;
+    color: #27214F;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 8px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background;
+}
+
+.return-btn:hover { background-color: #e0e0e0; }

@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    min-height: 100vh;
+}
+
+.message {
+    margin-top: 50px;
+    margin-left: 800px;
+    font-size: 50px;
+}
+
+.navbar {
+    background: linear-gradient(to right, #27214F, #351D53, #4C175A);
+    height: 150px;
+    width: 100%;
+    
+    padding: 0 0 0 35px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 3px rgb(63, 63, 63);
+    
+    border-bottom-left-radius: 20px;
+}
+
+.nav-brand {
+    color: white;
+    font-size: 59px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.nav-icon {
+    height: 80px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+}
+
+.nav-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    width: 230px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: background-color;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%; 
+    height: 6px; 
+    background-color: #F6FF00;
+    border-radius: 10px;
+    
+    opacity: 0; 
+    transition: opacity;
+}
+
+.active-page {
+    color: #F6FF00;
+    background-color: transparent;
+}
+
+.active-page::after {
+    opacity: 1; 
+}
+
+
+.nav-item:hover .nav-link {
+    background-color: #653697;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    
+    background-color: #653697; 
+    width: 100%;
+    min-width: 200px; 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 100;
+    flex-direction: column;
+}
+
+.nav-item:hover .dropdown-content {
+    display: flex;
+}
+
+.dropdown-content a {
+    color: #ffffff;
+    padding: 20px 20px; 
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    transition: background, color;
+}
+
+.dropdown-content a.active-item {
+    color: #F6FF00; 
+}
+
+.dropdown-content:hover a:hover {
+    background-color: #723bb3;
+}

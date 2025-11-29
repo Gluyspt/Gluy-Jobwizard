@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Wizard</title>
+    <link rel="stylesheet" href="register_style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="header">
+        Job Wizard
+        <img src="image/wizard_icon.png" alt="Job Wizard Icon" class="header-icon">
+    </div>
+
+    <div class="register-card">
+        <h1>Register</h1>
+        
+        <form id="registerForm">
+            
+            <div class="form-row">
+                <div class="form-group half-width">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <small class="field-error"></small>
+                </div>
+                <div class="form-group half-width">
+                    <label for="phone">Phone number</label>
+                    <input type="tel" id="phone" placeholder="Enter your Phone number" required>
+                    <small class="field-error"></small>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group half-width">
+                    <label for="first-name">First name</label>
+                    <input type="text" id="first-name" placeholder="Enter your First name" required>
+                    <small class="field-error"></small>
+                </div>
+                <div class="form-group half-width">
+                    <label for="last-name">Last name</label>
+                    <input type="text" id="last-name" placeholder="Enter your Last name" required>
+                    <small class="field-error"></small>
+                </div>
+            </div>
+
+            <div class="form-centering-wrapper">
+                
+                    <div class="form-group full-width">
+                        <label for="education">Education Level</label>
+                        <select id="education" required>
+                            <option value="none">None</option>
+                            <option value="high-school">High-school</option>
+                            <option value="bachelor">Bachelor's Degree</option>
+                            <option value="master">Master's Degree</option>
+                            <option value="doctoral">Doctoral's Degree</option>
+                        </select>
+                    </div>
+                
+            </div>
+
+            <div class="button-container">
+                    <button type="submit" class="register-bnt">Register</button>
+                    <span id="registerMessage" class="status-message"></span>
+            </div>
+            </form>
+
+        <div class="login-area" id="loginBtn">
+            <div class="login-text">
+                Login
+                <img src="image/click_icon.png" class="click-icon">
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

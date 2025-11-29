@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Wizard</title>
+    <link rel="stylesheet" href="find_jobs_style.css">
+    <link rel="stylesheet" href="nav_bar_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-brand">
+            Job Wizard <img src="image/wizard_icon.png" alt="Icon" class="nav-icon">
+        </div>
+        <div class="nav-menu">
+            <div class="nav-item dropdown">
+                <a href="jobs_applied.html" class="nav-link active-page">Job Seeker</a>
+                <div class="dropdown-content">
+                    <a href="jobs_applied.html" class="inactive-item">Jobs Applied</a>
+                    <a href="find_jobs.html" class="active-item">Find Jobs</a>
+                </div>
+            </div>
+            
+            <div class="nav-item">
+                <a href="employer.html" class="nav-link">Employer</a>
+            </div>
+            
+            <div class="nav-item">
+                <a href="index.html" id="logoutBtn" class="nav-link">Log Out</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        
+        <div class="page-header">
+            <h1>Find Jobs</h1>
+            <div class="search-bar">
+                <div class="search-input-wrapper">
+                    <img src="image/magnifying_glass_icon.png" alt="Search" class="magnifying-icon-img">
+                    <input type="text" id="filterTitle" placeholder="Filter: Job title">
+                </div>
+                <button class="search-btn" id="searchBtn">Search</button>
+            </div>
+        </div>
+
+        <div class="filters-row">
+            <div class="filter-group date-group">
+                <label>Date posted:</label>
+                <input type="date" id="filterDate">
+            </div>
+            
+            <div class="filter-group edu-group">
+                <span class="filter-label">Minimum Education:</span>
+                <select class="filter-select" id="educationFilter">
+                    <option value="1">High School</option>
+                    <option value="2">Bachelor's Degree</option>
+                    <option value="3">Master's Degree</option>
+                    <option value="4">Doctoral's Degree</option>
+                </select>
+            </div>
+            
+            <input type="number" id="filterSalary" class="filter-input" placeholder="Enter Minimum Salary">
+            <input type="number" id="filterExperience" class="filter-input" placeholder="Enter Minimum Experience">
+        </div>
+
+        <div class="job-list-container" id="findJobListContainer">
+            <p style="text-align:center; padding:20px;">Use the filters above to find jobs.</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

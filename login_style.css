@@ -1,0 +1,162 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+body {
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.header {
+
+    background: linear-gradient(to right, #27214F, #351D53, #4C175A);
+    
+    width: 100%;
+    
+    padding: 35px; 
+    
+    color: white;
+    font-size: 59px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    border-bottom-left-radius: 20px;
+    
+    box-shadow: 0 4px 3px rgb(63, 63, 63);
+    margin-bottom: 15px;
+}
+
+.header-icon {
+    height: 80px;
+    width: auto;
+    flex-shrink: 0;
+}
+
+.login-card {
+    background: linear-gradient(to bottom, #351D53, #45175A, #351D53);
+    width: 530px;
+    height: 780px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5); 
+    position: relative; 
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.login-card h1 {
+    color: white;
+    margin-bottom: 120px;
+    font-size: 50px;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 25px;
+}
+
+
+.login-btn {
+    background-color: #653697;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 8px;
+    font-size: 25px;
+    font-weight: 650;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #723bb3;
+}
+
+.register-area {
+    position: absolute;
+    bottom: -160px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    width: 550px;
+    height: 270px;
+    background-color: white;
+    
+    border-radius: 100%;
+    
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    cursor: pointer;
+    transition: height 0.3s;
+}
+
+.register-area:hover {
+    height: 280px;
+}
+
+.register-text {
+    color: #351D53;
+    font-weight: 640;
+    font-size: 40px;
+    position: relative;
+    user-select: none; 
+}
+
+.register-area:hover .click-icon {
+    bottom: 180px;
+}
+
+.click-icon { 
+    position: absolute;
+    
+    height: 60px; 
+    width: auto;
+    
+    bottom: 170px;
+    transition: bottom 0.3s;
+}
+
+.status-message {
+    position: absolute;
+    bottom: 50px; 
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    min-height: 25px;
+}
+
+.status-message.error {
+    color: #dc3545;
+}

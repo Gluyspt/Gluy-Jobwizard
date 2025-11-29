@@ -1,0 +1,223 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.header {
+    background: linear-gradient(to right, #27214F, #351D53, #4C175A);
+    
+    width: 100%;
+    padding: 35px; 
+    
+    color: white;
+    font-size: 59px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+    border-bottom-left-radius: 20px;
+    
+    box-shadow: 0 4px 3px rgb(63, 63, 63);
+    margin-bottom: 15px;
+}
+
+.header-icon {
+    height: 80px;
+    width: auto;
+    flex-shrink: 0;
+}
+
+.form-group label {
+    display: block;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 80%;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    background-color: white; 
+    color: black;
+}
+
+.register-bnt {
+    background-color: #653697; 
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 8px;
+    font-size: 25px;
+    font-weight: 650;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.register-bnt:hover {
+    background-color: #723bb3;
+}
+
+.register-card {
+    background: linear-gradient(to bottom, #351D53, #45175A, #351D53);
+    width: 67%;
+    height: 780px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5); 
+    position: relative; 
+    overflow: hidden; 
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-right: 50px;
+}
+
+.register-card h1 {
+    color: white;
+    margin-bottom: 40px;
+    font-size: 50px;
+    
+    width: 95%;
+    text-align: center;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px; 
+    margin-bottom: 35px;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.form-row .form-group {
+    margin-bottom: 0; 
+}
+
+.form-row .half-width {
+    width: 49%; 
+}
+
+.form-centering-wrapper {
+    width: 1100px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+#education {
+    margin: 0 0 35px 0; 
+    width: 600px; ;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    background-color: white; 
+    color: black;
+    appearance: none; 
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 20px;
+}
+
+.button-container {
+    position: relative;
+    margin-top: 40px;
+    width: 90%; 
+    text-align: center;
+}
+
+.login-area {
+    position: absolute;
+    bottom: -160px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    width: 1360px; 
+    height: 270px;
+    background-color: white;
+    border-radius: 100%;
+    
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    cursor: pointer;
+    transition: height 0.3s;
+}
+
+.login-area:hover {
+    height: 280px;
+}
+
+.login-text {
+    color: #351D53;
+    font-weight: 640;
+    font-size: 40px;
+    position: relative;
+    user-select: none; 
+}
+
+.login-area:hover .click-icon {
+    bottom: 180px;
+}
+
+.click-icon { 
+    position: absolute;
+    height: 60px;
+    width: auto;
+    bottom: 170px; 
+    transition: bottom 0.3s;
+}
+
+.status-message {
+    color: #dc3545;
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    min-height: 25px;
+}
+
+.field-error {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+    font-weight: 500;
+    text-align: left;
+}
+
+.field-error.active {
+    display: block;
+}
+
+
+.form-group input.valid {
+    border: 2px solid #28a745;
+    background-color: #f8fff9;
+}

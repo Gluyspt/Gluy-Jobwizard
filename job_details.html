@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Wizard</title>
+    <link rel="stylesheet" href="job_details_style.css">
+    <link rel="stylesheet" href="nav_bar_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-brand">
+            Job Wizard <img src="image/wizard_icon.png" alt="Icon" class="nav-icon">
+        </div>
+        <div class="nav-menu">
+            <div class="nav-item dropdown">
+                <a href="jobs_applied.html" class="nav-link active-page">Job Seeker</a>
+                <div class="dropdown-content">
+                    <a href="jobs_applied.html" class="active-item">Jobs Applied</a>
+                    <a href="find_jobs.html" class="inactive-item">Find Jobs</a>
+                </div>
+            </div>
+            <div class="nav-item"><a href="employer.html" class="nav-link">Employer</a></div>
+            <div class="nav-item"><a href="index.html" id="logoutBtn" class="nav-link">Log Out</a></div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        
+        <div class="detail-card" id="detailCard">
+            <p id="loadingText">Loading job details...</p>
+
+            <div id="jobContent" style="display: none;">
+                <h1 id="detailTitle">Job Title: ...</h1>
+                
+                <div class="detail-meta">
+                    <span class="detail-badge id-badge" id="detailID">ID: ...</span>
+                    <span class="detail-badge" id="detailStatus">Status: ...</span>
+                    <span class="detail-date" id="detailDate">Date Posted: ...</span>
+                </div>
+
+                <div class="detail-section">
+                    <h3>Job Description</h3>
+                    <p id="detailDesc">...</p>
+                </div>
+
+                <div class="detail-info-grid">
+                    <p><strong>Salary:</strong> <span id="detailSalary">...</span></p>
+                    <p><strong>Minimum Education level:</strong> <span id="detailEdu">...</span></p>
+                    <p><strong>Minimum Experience:</strong> <span id="detailExp">...</span></p>
+                </div>
+
+                <div class="detail-footer">
+                    <span class="creator-text">Created by: <span id="detailCreator">...</span></span>
+                    <button class="return-btn" onclick="window.history.back()">Return</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

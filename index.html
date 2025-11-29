@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Wizard</title>
+    <link rel="stylesheet" href="login_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="header">
+        Job Wizard
+        <img src="image/wizard_icon.png" alt="Job Wizard Icon" class="header-icon">
+    </div>
+
+    <div class="login-card">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your Email" required>
+            </div>
+            
+            <div style="text-align: center; position: relative; margin-top: 30px;">
+                <span id="loginMessage" class="status-message"></span>
+                <button type="submit" class="login-btn">Login</button>
+            </div>
+        </form>
+
+        <div class="register-area" id="registerBtn">
+            <div class="register-text">
+                Register
+                <img src="image/click_icon.png" class="click-icon">
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
